@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 400px;
+            border: 2px solid blue;
+            background-color: salmon;
+        }
+        .box{
+            height: 200px;
+            width: 400px;
+            border: 2px solid blue;
+            background-color: skyblue;
+            transition: transform 5s ease-in-out, translate 3s;
+        }
+        .box:hover{
+            transform: rotate(60deg) scale(0.50);
+            translate: 100px 30px;
+        }
+        .grid-container{
+            margin: 100px 0px 100px 0px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .grid-container h1{
+            border: 2px solid yellowgreen;
+            margin: 10px;
+        }
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card-grid div{
+            border: 2px solid yellowgreen;
+            border: none;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px;
+            box-shadow: 2px 2px 10px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <h5 class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, dolores.</h5>
+     </div>
+     <div class="grid-container">
+        <div>
+            <h1>Shawon</h1>
+        </div>
+        <div>
+            <h1>Jubair</h1>
+        </div>
+        <div>
+            <h1>Uddin</h1>
+        </div>
+        <div>
+            <h1>Boom</h1>
+        </div>
+        <div>
+            <h1>Player</h1>
+        </div>
+     </div>
+     <div class="card-grid">
+        <div>
+            <img src="images/boy.svg" alt="">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, sint.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda totam perspiciatis dolores quis magnam possimus sit error architecto eos! Eligendi velit laboriosam tempora alias esse consectetur. Ullam nesciunt quas a?</p>
+        </div>
+        <div>
+            <img src="images/ring.svg" alt="">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, sint.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda totam perspiciatis dolores quis magnam possimus sit error architecto eos! Eligendi velit laboriosam tempora alias esse consectetur. Ullam nesciunt quas a?</p>
+        </div>
+        <div>
+            <img src="images/water.svg" alt="">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, sint.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda totam perspiciatis dolores quis magnam possimus sit error architecto eos! Eligendi velit laboriosam tempora alias esse consectetur. Ullam nesciunt quas a?</p>
+        </div>
+     </div>
+</body>
+</html>

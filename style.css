@@ -1,0 +1,24 @@
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: violet;
+}
+li:nth-child(2n){
+    color: aquamarine;
+}
+.header:hover{
+    border-radius: 100px;
+}
+h1:hover{
+    color: red;
+    border: 2px solid aquamarine;
+    background-color: lightcoral;
+    color: white;
+}
+h1::before{
+    content: "Shawon ";
+}
+h1::after{
+    content: "2";
+}
